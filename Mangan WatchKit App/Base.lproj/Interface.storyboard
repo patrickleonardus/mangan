@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17701" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--Mangan-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="menu_page" title="Mangan" id="AgC-eL-Hgc" customClass="MenuController" customModule="Mangan_WatchKit_Extension">
+                    <items>
+                        <imageView width="35" height="35" alignment="center" verticalAlignment="center" id="aLs-Gw-dvB"/>
+                        <label alignment="center" verticalAlignment="center" hidden="YES" text="Tidak dapat terhubung dengan aplikasi di iOS" textAlignment="center" numberOfLines="0" id="NaE-n6-c7q"/>
+                        <table alignment="center" hidden="YES" id="Kva-lV-ec9">
+                            <items>
+                                <tableRow identifier="home_menu_cell" id="JMY-Q0-ph9" customClass="MenuCell" customModule="Mangan_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="5" id="qkH-h3-p1Z">
+                                        <items>
+                                            <group width="1" height="60" alignment="center" verticalAlignment="center" radius="6" id="GCK-pZ-H9Q">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFill" id="dzA-Iw-IVn"/>
+                                                </items>
+                                            </group>
+                                            <label width="1" alignment="center" verticalAlignment="center" numberOfLines="0" id="0bh-x4-k7J">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="8" right="8" top="5" bottom="5"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="menuImage" destination="dzA-Iw-IVn" id="sJi-2M-5Eb"/>
+                                        <outlet property="menuLabel" destination="0bh-x4-k7J" id="iqf-hc-Cqa"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="loadingImage" destination="aLs-Gw-dvB" id="XO7-oe-oPd"/>
+                        <outlet property="tableView" destination="Kva-lV-ec9" id="WLR-xh-NtD"/>
+                        <outlet property="validLabel" destination="NaE-n6-c7q" id="J0w-or-xgC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="83" y="-19"/>
+        </scene>
+        <!--Resep-->
+        <scene sceneID="gao-yu-kxM">
+            <objects>
+                <controller identifier="detail_menu_page" title="Resep" id="cge-4M-M0S" customClass="DetailMenuController" customModule="Mangan_WatchKit_Extension">
+                    <items>
+                        <imageView width="35" height="35" alignment="center" verticalAlignment="center" id="6fR-Kx-AV1"/>
+                        <group width="1" alignment="center" verticalAlignment="center" hidden="YES" layout="vertical" spacing="14" id="ZhG-iA-mzT">
+                            <items>
+                                <group width="1" alignment="left" layout="vertical" id="odM-uz-5GR" userLabel="Header Group">
+                                    <items>
+                                        <group width="1" height="80" alignment="left" radius="6" id="FcV-Dr-5Tp">
+                                            <items>
+                                                <imageView width="1" height="80" alignment="left" id="VKU-Gq-sMJ"/>
+                                            </items>
+                                        </group>
+                                        <label width="1" alignment="left" text="Label" numberOfLines="0" id="Jof-rI-4cv">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="1Ej-8C-bzQ">
+                                    <items>
+                                        <group alignment="left" layout="vertical" id="ZN9-W1-3Br">
+                                            <items>
+                                                <label width="38" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="wZ0-rR-WsE">
+                                                    <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                </label>
+                                                <imageView width="25" height="25" alignment="center" image="ic_difficulty" contentMode="scaleAspectFit" id="3bh-ea-d7E"/>
+                                            </items>
+                                        </group>
+                                        <group alignment="center" layout="vertical" id="0b8-TG-2m2">
+                                            <items>
+                                                <label width="38" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="hDD-7k-mk3">
+                                                    <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                </label>
+                                                <imageView width="25" height="25" alignment="center" image="ic_time" contentMode="scaleAspectFit" id="a74-L6-SuM"/>
+                                            </items>
+                                        </group>
+                                        <group alignment="right" layout="vertical" id="hWB-Rj-UXc">
+                                            <items>
+                                                <label width="38" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="Kgk-rG-K57">
+                                                    <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                </label>
+                                                <imageView width="25" height="25" alignment="center" image="ic_portion" contentMode="scaleAspectFit" id="NHf-OW-9ux"/>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" spacing="8" id="jpX-8f-U5K" userLabel="Button Group">
+                                    <items>
+                                        <button width="1" alignment="left" title="Bahan Bahan" id="GgW-BP-OaN">
+                                            <connections>
+                                                <action selector="ingridientBtn" destination="cge-4M-M0S" id="lj4-Nb-hCt"/>
+                                            </connections>
+                                        </button>
+                                        <button width="1" alignment="left" title="Cara Masak" id="QlH-gY-wcm">
+                                            <connections>
+                                                <action selector="stepBtn" destination="cge-4M-M0S" id="Fmo-lk-HGX"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="difficultyLabel" destination="wZ0-rR-WsE" id="Ojd-Zz-zLn"/>
+                        <outlet property="imageLoading" destination="6fR-Kx-AV1" id="LWG-LV-34S"/>
+                        <outlet property="menuGroup" destination="ZhG-iA-mzT" id="Iuq-RV-BZR"/>
+                        <outlet property="menuImage" destination="VKU-Gq-sMJ" id="6Mj-jF-ix7"/>
+                        <outlet property="menuTitle" destination="Jof-rI-4cv" id="XmZ-M9-agj"/>
+                        <outlet property="portionLabel" destination="Kgk-rG-K57" id="y1H-Mj-g0w"/>
+                        <outlet property="timeLabel" destination="hDD-7k-mk3" id="4rJ-7Q-rJf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="364" y="-19"/>
+        </scene>
+        <!--Bahan-->
+        <scene sceneID="djx-YP-ARt">
+            <objects>
+                <controller identifier="ingridient_page" title="Bahan" id="Iq0-r6-lBk" customClass="IngridientController" customModule="Mangan_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="aTM-TR-8Ii">
+                            <items>
+                                <tableRow identifier="ingridient_cell" id="ZIU-s7-bhj" customClass="IngridientCell" customModule="Mangan_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="8" id="6Gw-ab-ghk">
+                                        <items>
+                                            <label width="0.20000000000000001" alignment="left" verticalAlignment="center" text="No" textAlignment="center" numberOfLines="0" id="tbK-DL-hfH">
+                                                <fontDescription key="font" type="system" pointSize="13"/>
+                                            </label>
+                                            <label width="0.80000000000000004" alignment="left" verticalAlignment="center" text="Test" numberOfLines="0" id="JT8-Bo-t2B">
+                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="8" right="8" top="8" bottom="8"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="JT8-Bo-t2B" id="HEz-la-rX9"/>
+                                        <outlet property="noLabel" destination="tbK-DL-hfH" id="9Pj-Gd-JbZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="aTM-TR-8Ii" id="UoP-2C-9fo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="655" y="-19"/>
+        </scene>
+        <!--Cara Masak-->
+        <scene sceneID="P76-am-a9M">
+            <objects>
+                <controller identifier="step_page" title="Cara Masak" id="nQd-7t-57T" customClass="StepController" customModule="Mangan_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Q5G-Fw-ceE">
+                            <items>
+                                <tableRow identifier="steps_cell" id="trf-WD-imn" customClass="StepCell" customModule="Mangan_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="10" id="1Cb-FY-ER7">
+                                        <items>
+                                            <label alignment="center" text="Label" textAlignment="center" id="qw7-j1-VBO">
+                                                <fontDescription key="font" type="boldSystem" pointSize="20"/>
+                                            </label>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="Bbo-Zg-iu8">
+                                                <fontDescription key="font" type="system" pointSize="17"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="8" right="8" top="10" bottom="10"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="stepCount" destination="qw7-j1-VBO" id="SiM-4l-Hpt"/>
+                                        <outlet property="stepDesc" destination="Bbo-Zg-iu8" id="VS0-Gq-Swh"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="Q5G-Fw-ceE" id="iGq-aL-hcb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="953" y="-19"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.1960784314" green="0.4532437325" blue="0.85886341330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="ic_difficulty" width="184" height="140"/>
+        <image name="ic_portion" width="200" height="192"/>
+        <image name="ic_time" width="168" height="184"/>
+    </resources>
+</document>

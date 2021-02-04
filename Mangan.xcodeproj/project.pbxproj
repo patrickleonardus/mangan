@@ -1,0 +1,1413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FF5266B37DCD7975F259372 /* Pods_Mangan_WidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD0733FC403C1CC05A02B29 /* Pods_Mangan_WidgetExtension.framework */; };
+		7D2D390DDA90DA7A2A748152 /* Pods_Mangan_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3412A0D5FD8B5AA800C029ED /* Pods_Mangan_WatchKit_App.framework */; };
+		96FB8F2F25C7A0B70035393E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FB8F2E25C7A0B70035393E /* WidgetKit.framework */; };
+		96FB8F3125C7A0B70035393E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FB8F3025C7A0B70035393E /* SwiftUI.framework */; };
+		96FB8F3425C7A0B70035393E /* Mangan_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB8F3325C7A0B70035393E /* Mangan_Widget.swift */; };
+		96FB8F3725C7A0B80035393E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FB8F3625C7A0B80035393E /* Assets.xcassets */; };
+		96FB8F3925C7A0B80035393E /* Mangan_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 96FB8F3525C7A0B70035393E /* Mangan_Widget.intentdefinition */; };
+		96FB8F3A25C7A0B80035393E /* Mangan_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 96FB8F3525C7A0B70035393E /* Mangan_Widget.intentdefinition */; };
+		96FB8F3D25C7A0B80035393E /* Mangan WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 96FB8F2D25C7A0B70035393E /* Mangan WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96FB8F5825C7CEAD0035393E /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A44125B02964009F5A5F /* Url.swift */; };
+		D43A2C688EBC08DA6D252248 /* Pods_Mangan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E485BAC4FAA4C2B9478469E /* Pods_Mangan.framework */; };
+		E6018B4F25B6CC7000280E09 /* ExploreArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B4E25B6CC7000280E09 /* ExploreArticleCell.swift */; };
+		E6018B5425B6CFC000280E09 /* SnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B5325B6CFC000280E09 /* SnappingLayout.swift */; };
+		E6018B7725B7DB6000280E09 /* DetailArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B7625B7DB6000280E09 /* DetailArticleController.swift */; };
+		E6018B7C25B7DB6D00280E09 /* DetailArticle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6018B7B25B7DB6D00280E09 /* DetailArticle.storyboard */; };
+		E6018B8125B7E2EC00280E09 /* ImageDetailArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B8025B7E2EC00280E09 /* ImageDetailArticleCell.swift */; };
+		E6018B8625B7E2FD00280E09 /* TitleDetailArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B8525B7E2FD00280E09 /* TitleDetailArticleCell.swift */; };
+		E6018B8B25B7E30800280E09 /* DescDetailArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B8A25B7E30800280E09 /* DescDetailArticleCell.swift */; };
+		E6018B9125B7F22F00280E09 /* ListMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B9025B7F22F00280E09 /* ListMenuController.swift */; };
+		E6018B9625B7F23900280E09 /* ListMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6018B9525B7F23900280E09 /* ListMenu.storyboard */; };
+		E6018B9B25B80E6400280E09 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018B9A25B80E6400280E09 /* Const.swift */; };
+		E6018BA125B814F600280E09 /* ListArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018BA025B814F600280E09 /* ListArticleController.swift */; };
+		E6018BA625B8150500280E09 /* ListArticle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6018BA525B8150500280E09 /* ListArticle.storyboard */; };
+		E6018BAB25B8191B00280E09 /* ListArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6018BAA25B8191B00280E09 /* ListArticleCell.swift */; };
+		E63CF22425B922D4009B5473 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63CF22325B922D4009B5473 /* ProfileController.swift */; };
+		E63CF22C25B922DE009B5473 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63CF22B25B922DE009B5473 /* Profile.storyboard */; };
+		E63CF23225B927FA009B5473 /* ProfilePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63CF23125B927FA009B5473 /* ProfilePictureCell.swift */; };
+		E63CF23725B93201009B5473 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63CF23625B93201009B5473 /* AuthenticationController.swift */; };
+		E63CF23D25B9324B009B5473 /* Authenticate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63CF23C25B9324B009B5473 /* Authenticate.storyboard */; };
+		E63D86B425B5375D00C568EE /* ViewPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86B325B5375D00C568EE /* ViewPagerController.swift */; };
+		E63D86B925B53F3900C568EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86B825B53F3900C568EE /* Color.swift */; };
+		E63D86BE25B5436300C568EE /* SummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86BD25B5436300C568EE /* SummaryController.swift */; };
+		E63D86C425B55FD500C568EE /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86C325B55FD500C568EE /* AboutCell.swift */; };
+		E63D86C925B5616600C568EE /* IngridientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86C825B5616600C568EE /* IngridientsController.swift */; };
+		E63D86CE25B5617800C568EE /* StepCookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86CD25B5617800C568EE /* StepCookController.swift */; };
+		E63D86D625B56F8000C568EE /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D86D525B56F8000C568EE /* StepCell.swift */; };
+		E645A40025B02788009F5A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A3FF25B02788009F5A5F /* AppDelegate.swift */; };
+		E645A40225B02788009F5A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A40125B02788009F5A5F /* SceneDelegate.swift */; };
+		E645A40425B02788009F5A5F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A40325B02788009F5A5F /* HomeController.swift */; };
+		E645A40725B02788009F5A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E645A40525B02788009F5A5F /* Main.storyboard */; };
+		E645A40925B02789009F5A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E645A40825B02789009F5A5F /* Assets.xcassets */; };
+		E645A40C25B02789009F5A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E645A40A25B02789009F5A5F /* LaunchScreen.storyboard */; };
+		E645A41125B02789009F5A5F /* Mangan WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E645A41025B02789009F5A5F /* Mangan WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E645A41725B02789009F5A5F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E645A41525B02789009F5A5F /* Interface.storyboard */; };
+		E645A41925B02789009F5A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E645A41825B02789009F5A5F /* Assets.xcassets */; };
+		E645A42025B02789009F5A5F /* Mangan WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E645A41F25B02789009F5A5F /* Mangan WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E645A42525B02789009F5A5F /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A42425B02789009F5A5F /* MenuController.swift */; };
+		E645A42725B02789009F5A5F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A42625B02789009F5A5F /* ExtensionDelegate.swift */; };
+		E645A42925B02789009F5A5F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A42825B02789009F5A5F /* ComplicationController.swift */; };
+		E645A42B25B0278A009F5A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E645A42A25B0278A009F5A5F /* Assets.xcassets */; };
+		E645A44225B02964009F5A5F /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645A44125B02964009F5A5F /* Url.swift */; };
+		E65BF3AC25BAA77B001A1860 /* SnackBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3AB25BAA77B001A1860 /* SnackBarCustom.swift */; };
+		E65BF3B125BAACA7001A1860 /* FavoriteList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3B025BAACA7001A1860 /* FavoriteList.swift */; };
+		E65BF3B625BAAE6F001A1860 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3B525BAAE6F001A1860 /* FavoriteCell.swift */; };
+		E65BF3BF25BAD785001A1860 /* AppleWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3BE25BAD785001A1860 /* AppleWatchController.swift */; };
+		E65BF3CA25BAD795001A1860 /* AppleWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E65BF3C925BAD795001A1860 /* AppleWatch.storyboard */; };
+		E65BF3CF25BE6A57001A1860 /* MenuWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3CE25BE6A57001A1860 /* MenuWatch.swift */; };
+		E65BF3E225BEA108001A1860 /* MenuWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3E125BEA108001A1860 /* MenuWatch.swift */; };
+		E65BF3EB25BEA83C001A1860 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BF3EA25BEA83C001A1860 /* MenuCell.swift */; };
+		E680199525B984BF00E3F365 /* EditProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680199425B984BF00E3F365 /* EditProfileCell.swift */; };
+		E680199D25BA840300E3F365 /* MenuFavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E680199C25BA840300E3F365 /* MenuFavoriteController.swift */; };
+		E68019A225BA841300E3F365 /* ArticleFavoriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68019A125BA841300E3F365 /* ArticleFavoriteController.swift */; };
+		E68019A725BA842100E3F365 /* MenuFavorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68019A625BA842100E3F365 /* MenuFavorite.storyboard */; };
+		E68019AC25BA844400E3F365 /* ArticleFavorite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68019AB25BA844400E3F365 /* ArticleFavorite.storyboard */; };
+		E6923EAB25B9661F00C3ED11 /* Mangan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6923EA925B9661F00C3ED11 /* Mangan.xcdatamodeld */; };
+		E6923EB025B96DFD00C3ED11 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6923EAF25B96DFD00C3ED11 /* Person.swift */; };
+		E6923EB525B981E200C3ED11 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6923EB425B981E200C3ED11 /* EditProfileController.swift */; };
+		E6B1CF2325B6903D00074C5C /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B1CF2225B6903D00074C5C /* Article.swift */; };
+		E6B1CF2925B690F200074C5C /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B1CF2825B690F200074C5C /* ExploreController.swift */; };
+		E6C1161025B1539D00F17F97 /* SearchMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1160F25B1539D00F17F97 /* SearchMenuCell.swift */; };
+		E6C1161C25B1824300F17F97 /* DetailMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1161B25B1824300F17F97 /* DetailMenuController.swift */; };
+		E6C1162125B1825100F17F97 /* DetailMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C1162025B1825100F17F97 /* DetailMenu.storyboard */; };
+		E6C512F625B02F1600A9DA35 /* RecipesMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C512F525B02F1600A9DA35 /* RecipesMenuCell.swift */; };
+		E6C5130625B039B600A9DA35 /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5130525B039B600A9DA35 /* Recipes.swift */; };
+		E6C5130C25B04DCB00A9DA35 /* LoadImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C5130B25B04DCB00A9DA35 /* LoadImageFromUrl.swift */; };
+		E6C63A8325BFD2AE0042628F /* DetailMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63A8225BFD2AE0042628F /* DetailMenuController.swift */; };
+		E6C63A8F25C000A70042628F /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63A8E25C000A70042628F /* Recipe.swift */; };
+		E6C63A9925C0076D0042628F /* IngridientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63A9825C0076D0042628F /* IngridientController.swift */; };
+		E6C63A9E25C007880042628F /* StepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63A9D25C007880042628F /* StepController.swift */; };
+		E6C63AA325C014380042628F /* IngridientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63AA225C014380042628F /* IngridientCell.swift */; };
+		E6C63AA825C01C330042628F /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63AA725C01C330042628F /* StepCell.swift */; };
+		E6C63AAE25C104570042628F /* TOCController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63AAD25C104570042628F /* TOCController.swift */; };
+		E6C63AB325C104910042628F /* TOC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C63AB225C104910042628F /* TOC.storyboard */; };
+		E6C63AB825C10BE30042628F /* TOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63AB725C10BE30042628F /* TOC.swift */; };
+		E6C63ABD25C10F7D0042628F /* TOCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63ABC25C10F7D0042628F /* TOCCell.swift */; };
+		E6C63AC225C11E620042628F /* IngridientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C63AC125C11E620042628F /* IngridientsCell.swift */; };
+		F2E6CCF467DF712994E90A7A /* Pods_Mangan_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6432DAB20F1F8453688FE35D /* Pods_Mangan_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96FB8F3B25C7A0B80035393E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E645A3F425B02788009F5A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96FB8F2C25C7A0B70035393E;
+			remoteInfo = "Mangan WidgetExtension";
+		};
+		E645A41225B02789009F5A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E645A3F425B02788009F5A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E645A40F25B02789009F5A5F;
+			remoteInfo = "Mangan WatchKit App";
+		};
+		E645A42125B02789009F5A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E645A3F425B02788009F5A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E645A41E25B02789009F5A5F;
+			remoteInfo = "Mangan WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96FB8F3E25C7A0B80035393E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96FB8F3D25C7A0B80035393E /* Mangan WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A43225B0278A009F5A5F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E645A42025B02789009F5A5F /* Mangan WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A43625B0278A009F5A5F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E645A41125B02789009F5A5F /* Mangan WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07A85C34DE4C654E67B507B3 /* Pods-Mangan WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Mangan WatchKit App/Pods-Mangan WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		2E485BAC4FAA4C2B9478469E /* Pods_Mangan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mangan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3412A0D5FD8B5AA800C029ED /* Pods_Mangan_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mangan_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF269AA06AE6312C05D7FF2 /* Pods-Mangan WidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan WidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-Mangan WidgetExtension/Pods-Mangan WidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		421E86DA64990F916BB977E6 /* Pods-Mangan WidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan WidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-Mangan WidgetExtension/Pods-Mangan WidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD0733FC403C1CC05A02B29 /* Pods_Mangan_WidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mangan_WidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CD8A4563994C74C02E55A07 /* Pods-Mangan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan.debug.xcconfig"; path = "Target Support Files/Pods-Mangan/Pods-Mangan.debug.xcconfig"; sourceTree = "<group>"; };
+		6432DAB20F1F8453688FE35D /* Pods_Mangan_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mangan_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE9E57BEB2ADD2E97801454 /* Pods-Mangan WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Mangan WatchKit Extension/Pods-Mangan WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		96FB8F2D25C7A0B70035393E /* Mangan WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mangan WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96FB8F2E25C7A0B70035393E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		96FB8F3025C7A0B70035393E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		96FB8F3325C7A0B70035393E /* Mangan_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mangan_Widget.swift; sourceTree = "<group>"; };
+		96FB8F3525C7A0B70035393E /* Mangan_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Mangan_Widget.intentdefinition; sourceTree = "<group>"; };
+		96FB8F3625C7A0B80035393E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96FB8F3825C7A0B80035393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69B5295D3090D4A1C76D27C /* Pods-Mangan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan.release.xcconfig"; path = "Target Support Files/Pods-Mangan/Pods-Mangan.release.xcconfig"; sourceTree = "<group>"; };
+		E134D356AEAA9582636470E7 /* Pods-Mangan WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Mangan WatchKit Extension/Pods-Mangan WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		E6018B4E25B6CC7000280E09 /* ExploreArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreArticleCell.swift; sourceTree = "<group>"; };
+		E6018B5325B6CFC000280E09 /* SnappingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingLayout.swift; sourceTree = "<group>"; };
+		E6018B7625B7DB6000280E09 /* DetailArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticleController.swift; sourceTree = "<group>"; };
+		E6018B7B25B7DB6D00280E09 /* DetailArticle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailArticle.storyboard; sourceTree = "<group>"; };
+		E6018B8025B7E2EC00280E09 /* ImageDetailArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailArticleCell.swift; sourceTree = "<group>"; };
+		E6018B8525B7E2FD00280E09 /* TitleDetailArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailArticleCell.swift; sourceTree = "<group>"; };
+		E6018B8A25B7E30800280E09 /* DescDetailArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescDetailArticleCell.swift; sourceTree = "<group>"; };
+		E6018B9025B7F22F00280E09 /* ListMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMenuController.swift; sourceTree = "<group>"; };
+		E6018B9525B7F23900280E09 /* ListMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListMenu.storyboard; sourceTree = "<group>"; };
+		E6018B9A25B80E6400280E09 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		E6018BA025B814F600280E09 /* ListArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListArticleController.swift; sourceTree = "<group>"; };
+		E6018BA525B8150500280E09 /* ListArticle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListArticle.storyboard; sourceTree = "<group>"; };
+		E6018BAA25B8191B00280E09 /* ListArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListArticleCell.swift; sourceTree = "<group>"; };
+		E63CF22325B922D4009B5473 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		E63CF22B25B922DE009B5473 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		E63CF23125B927FA009B5473 /* ProfilePictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureCell.swift; sourceTree = "<group>"; };
+		E63CF23625B93201009B5473 /* AuthenticationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		E63CF23C25B9324B009B5473 /* Authenticate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authenticate.storyboard; sourceTree = "<group>"; };
+		E63D86B325B5375D00C568EE /* ViewPagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPagerController.swift; sourceTree = "<group>"; };
+		E63D86B825B53F3900C568EE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		E63D86BD25B5436300C568EE /* SummaryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryController.swift; sourceTree = "<group>"; };
+		E63D86C325B55FD500C568EE /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		E63D86C825B5616600C568EE /* IngridientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientsController.swift; sourceTree = "<group>"; };
+		E63D86CD25B5617800C568EE /* StepCookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCookController.swift; sourceTree = "<group>"; };
+		E63D86D525B56F8000C568EE /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
+		E645A3FC25B02788009F5A5F /* Mangan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mangan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E645A3FF25B02788009F5A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E645A40125B02788009F5A5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E645A40325B02788009F5A5F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E645A40625B02788009F5A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E645A40825B02789009F5A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E645A40B25B02789009F5A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E645A40D25B02789009F5A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E645A41025B02789009F5A5F /* Mangan WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mangan WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E645A41625B02789009F5A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E645A41825B02789009F5A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E645A41A25B02789009F5A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E645A41F25B02789009F5A5F /* Mangan WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mangan WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E645A42425B02789009F5A5F /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		E645A42625B02789009F5A5F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E645A42825B02789009F5A5F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E645A42A25B0278A009F5A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E645A42C25B0278A009F5A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E645A44125B02964009F5A5F /* Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
+		E65BF3AB25BAA77B001A1860 /* SnackBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarCustom.swift; sourceTree = "<group>"; };
+		E65BF3B025BAACA7001A1860 /* FavoriteList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteList.swift; sourceTree = "<group>"; };
+		E65BF3B525BAAE6F001A1860 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		E65BF3BE25BAD785001A1860 /* AppleWatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleWatchController.swift; sourceTree = "<group>"; };
+		E65BF3C925BAD795001A1860 /* AppleWatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppleWatch.storyboard; sourceTree = "<group>"; };
+		E65BF3CE25BE6A57001A1860 /* MenuWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWatch.swift; sourceTree = "<group>"; };
+		E65BF3E125BEA108001A1860 /* MenuWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWatch.swift; sourceTree = "<group>"; };
+		E65BF3EA25BEA83C001A1860 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		E680199425B984BF00E3F365 /* EditProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileCell.swift; sourceTree = "<group>"; };
+		E680199C25BA840300E3F365 /* MenuFavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFavoriteController.swift; sourceTree = "<group>"; };
+		E68019A125BA841300E3F365 /* ArticleFavoriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFavoriteController.swift; sourceTree = "<group>"; };
+		E68019A625BA842100E3F365 /* MenuFavorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFavorite.storyboard; sourceTree = "<group>"; };
+		E68019AB25BA844400E3F365 /* ArticleFavorite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleFavorite.storyboard; sourceTree = "<group>"; };
+		E6923EAA25B9661F00C3ED11 /* Mangan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mangan.xcdatamodel; sourceTree = "<group>"; };
+		E6923EAF25B96DFD00C3ED11 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E6923EB425B981E200C3ED11 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		E6B1CF2225B6903D00074C5C /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E6B1CF2825B690F200074C5C /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		E6C1160F25B1539D00F17F97 /* SearchMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMenuCell.swift; sourceTree = "<group>"; };
+		E6C1161B25B1824300F17F97 /* DetailMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMenuController.swift; sourceTree = "<group>"; };
+		E6C1162025B1825100F17F97 /* DetailMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailMenu.storyboard; sourceTree = "<group>"; };
+		E6C512F525B02F1600A9DA35 /* RecipesMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesMenuCell.swift; sourceTree = "<group>"; };
+		E6C5130525B039B600A9DA35 /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipes.swift; sourceTree = "<group>"; };
+		E6C5130B25B04DCB00A9DA35 /* LoadImageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageFromUrl.swift; sourceTree = "<group>"; };
+		E6C63A8225BFD2AE0042628F /* DetailMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMenuController.swift; sourceTree = "<group>"; };
+		E6C63A8E25C000A70042628F /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E6C63A9825C0076D0042628F /* IngridientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientController.swift; sourceTree = "<group>"; };
+		E6C63A9D25C007880042628F /* StepController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepController.swift; sourceTree = "<group>"; };
+		E6C63AA225C014380042628F /* IngridientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientCell.swift; sourceTree = "<group>"; };
+		E6C63AA725C01C330042628F /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
+		E6C63AAD25C104570042628F /* TOCController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCController.swift; sourceTree = "<group>"; };
+		E6C63AB225C104910042628F /* TOC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TOC.storyboard; sourceTree = "<group>"; };
+		E6C63AB725C10BE30042628F /* TOC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOC.swift; sourceTree = "<group>"; };
+		E6C63ABC25C10F7D0042628F /* TOCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCCell.swift; sourceTree = "<group>"; };
+		E6C63AC125C11E620042628F /* IngridientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientsCell.swift; sourceTree = "<group>"; };
+		F1F3951A39B9A6158323FC73 /* Pods-Mangan WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mangan WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Mangan WatchKit App/Pods-Mangan WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96FB8F2A25C7A0B70035393E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FB8F3125C7A0B70035393E /* SwiftUI.framework in Frameworks */,
+				96FB8F2F25C7A0B70035393E /* WidgetKit.framework in Frameworks */,
+				2FF5266B37DCD7975F259372 /* Pods_Mangan_WidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A3F925B02788009F5A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D43A2C688EBC08DA6D252248 /* Pods_Mangan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A41C25B02789009F5A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E6CCF467DF712994E90A7A /* Pods_Mangan_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA55D1B25757BBBD57D9A1CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2D390DDA90DA7A2A748152 /* Pods_Mangan_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04A5AC9C50F3174673EA8069 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CD8A4563994C74C02E55A07 /* Pods-Mangan.debug.xcconfig */,
+				D69B5295D3090D4A1C76D27C /* Pods-Mangan.release.xcconfig */,
+				F1F3951A39B9A6158323FC73 /* Pods-Mangan WatchKit App.debug.xcconfig */,
+				07A85C34DE4C654E67B507B3 /* Pods-Mangan WatchKit App.release.xcconfig */,
+				E134D356AEAA9582636470E7 /* Pods-Mangan WatchKit Extension.debug.xcconfig */,
+				7EE9E57BEB2ADD2E97801454 /* Pods-Mangan WatchKit Extension.release.xcconfig */,
+				421E86DA64990F916BB977E6 /* Pods-Mangan WidgetExtension.debug.xcconfig */,
+				3BF269AA06AE6312C05D7FF2 /* Pods-Mangan WidgetExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6026A1FE3C9A37D401E5CD6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96FB8F2E25C7A0B70035393E /* WidgetKit.framework */,
+				96FB8F3025C7A0B70035393E /* SwiftUI.framework */,
+				2E485BAC4FAA4C2B9478469E /* Pods_Mangan.framework */,
+				3412A0D5FD8B5AA800C029ED /* Pods_Mangan_WatchKit_App.framework */,
+				6432DAB20F1F8453688FE35D /* Pods_Mangan_WatchKit_Extension.framework */,
+				4CD0733FC403C1CC05A02B29 /* Pods_Mangan_WidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96FB8F3225C7A0B70035393E /* Mangan Widget */ = {
+			isa = PBXGroup;
+			children = (
+				96FB8F3325C7A0B70035393E /* Mangan_Widget.swift */,
+				96FB8F3525C7A0B70035393E /* Mangan_Widget.intentdefinition */,
+				96FB8F3625C7A0B80035393E /* Assets.xcassets */,
+				96FB8F3825C7A0B80035393E /* Info.plist */,
+			);
+			path = "Mangan Widget";
+			sourceTree = "<group>";
+		};
+		E6018B7525B7DB4500280E09 /* Detail Article Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6018B7625B7DB6000280E09 /* DetailArticleController.swift */,
+				E6018B7B25B7DB6D00280E09 /* DetailArticle.storyboard */,
+				E6018B8025B7E2EC00280E09 /* ImageDetailArticleCell.swift */,
+				E6018B8525B7E2FD00280E09 /* TitleDetailArticleCell.swift */,
+				E6018B8A25B7E30800280E09 /* DescDetailArticleCell.swift */,
+			);
+			path = "Detail Article Page";
+			sourceTree = "<group>";
+		};
+		E6018B8F25B7F21800280E09 /* List Menu Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6018B9025B7F22F00280E09 /* ListMenuController.swift */,
+				E6018B9525B7F23900280E09 /* ListMenu.storyboard */,
+			);
+			path = "List Menu Page";
+			sourceTree = "<group>";
+		};
+		E6018B9F25B814DD00280E09 /* List Article Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6018BA025B814F600280E09 /* ListArticleController.swift */,
+				E6018BA525B8150500280E09 /* ListArticle.storyboard */,
+				E6018BAA25B8191B00280E09 /* ListArticleCell.swift */,
+			);
+			path = "List Article Page";
+			sourceTree = "<group>";
+		};
+		E63CF22225B922BC009B5473 /* Profile Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6C63AAC25C104340042628F /* Terms & Condition Page */,
+				E6923EB425B981E200C3ED11 /* EditProfileController.swift */,
+				E63CF22325B922D4009B5473 /* ProfileController.swift */,
+				E63CF22B25B922DE009B5473 /* Profile.storyboard */,
+				E63CF23125B927FA009B5473 /* ProfilePictureCell.swift */,
+				E680199425B984BF00E3F365 /* EditProfileCell.swift */,
+			);
+			path = "Profile Page";
+			sourceTree = "<group>";
+		};
+		E63CF23B25B9322E009B5473 /* Authenticate Page */ = {
+			isa = PBXGroup;
+			children = (
+				E63CF23625B93201009B5473 /* AuthenticationController.swift */,
+				E63CF23C25B9324B009B5473 /* Authenticate.storyboard */,
+			);
+			path = "Authenticate Page";
+			sourceTree = "<group>";
+		};
+		E645A3F325B02788009F5A5F = {
+			isa = PBXGroup;
+			children = (
+				E645A3FE25B02788009F5A5F /* Mangan */,
+				E645A41425B02789009F5A5F /* Mangan WatchKit App */,
+				E645A42325B02789009F5A5F /* Mangan WatchKit Extension */,
+				96FB8F3225C7A0B70035393E /* Mangan Widget */,
+				E645A3FD25B02788009F5A5F /* Products */,
+				04A5AC9C50F3174673EA8069 /* Pods */,
+				6026A1FE3C9A37D401E5CD6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E645A3FD25B02788009F5A5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E645A3FC25B02788009F5A5F /* Mangan.app */,
+				E645A41025B02789009F5A5F /* Mangan WatchKit App.app */,
+				E645A41F25B02789009F5A5F /* Mangan WatchKit Extension.appex */,
+				96FB8F2D25C7A0B70035393E /* Mangan WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E645A3FE25B02788009F5A5F /* Mangan */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5130A25B04DBA00A9DA35 /* Utils */,
+				E6C5130425B039A800A9DA35 /* Model */,
+				E63CF23B25B9322E009B5473 /* Authenticate Page */,
+				E645A44C25B02B87009F5A5F /* Home Page */,
+				E6B1CF2725B690D100074C5C /* Explore Page */,
+				E680199925BA83D400E3F365 /* Favorite Page */,
+				E6C1161425B1821D00F17F97 /* Detail Menu Page */,
+				E6018B7525B7DB4500280E09 /* Detail Article Page */,
+				E6018B8F25B7F21800280E09 /* List Menu Page */,
+				E6018B9F25B814DD00280E09 /* List Article Page */,
+				E63CF22225B922BC009B5473 /* Profile Page */,
+				E65BF3BD25BAD767001A1860 /* Apple Watch Page */,
+				E645A44025B0294F009F5A5F /* Constant */,
+				E645A3FF25B02788009F5A5F /* AppDelegate.swift */,
+				E645A40125B02788009F5A5F /* SceneDelegate.swift */,
+				E645A40525B02788009F5A5F /* Main.storyboard */,
+				E645A40825B02789009F5A5F /* Assets.xcassets */,
+				E645A40A25B02789009F5A5F /* LaunchScreen.storyboard */,
+				E645A40D25B02789009F5A5F /* Info.plist */,
+				E6923EA925B9661F00C3ED11 /* Mangan.xcdatamodeld */,
+			);
+			path = Mangan;
+			sourceTree = "<group>";
+		};
+		E645A41425B02789009F5A5F /* Mangan WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E645A41525B02789009F5A5F /* Interface.storyboard */,
+				E645A41825B02789009F5A5F /* Assets.xcassets */,
+				E645A41A25B02789009F5A5F /* Info.plist */,
+			);
+			path = "Mangan WatchKit App";
+			sourceTree = "<group>";
+		};
+		E645A42325B02789009F5A5F /* Mangan WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E6C63A9425C007420042628F /* Step Page */,
+				E6C63A9325C007300042628F /* Ingridient Page */,
+				E65BF3E925BEA819001A1860 /* Menu Page */,
+				E65BF3E025BEA0EF001A1860 /* Model */,
+				E645A42625B02789009F5A5F /* ExtensionDelegate.swift */,
+				E645A42825B02789009F5A5F /* ComplicationController.swift */,
+				E645A42A25B0278A009F5A5F /* Assets.xcassets */,
+				E645A42C25B0278A009F5A5F /* Info.plist */,
+			);
+			path = "Mangan WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E645A44025B0294F009F5A5F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E645A44125B02964009F5A5F /* Url.swift */,
+				E6018B9A25B80E6400280E09 /* Const.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E645A44C25B02B87009F5A5F /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				E645A40325B02788009F5A5F /* HomeController.swift */,
+				E6C512F525B02F1600A9DA35 /* RecipesMenuCell.swift */,
+				E6C1160F25B1539D00F17F97 /* SearchMenuCell.swift */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		E65BF3BD25BAD767001A1860 /* Apple Watch Page */ = {
+			isa = PBXGroup;
+			children = (
+				E65BF3BE25BAD785001A1860 /* AppleWatchController.swift */,
+				E65BF3C925BAD795001A1860 /* AppleWatch.storyboard */,
+			);
+			path = "Apple Watch Page";
+			sourceTree = "<group>";
+		};
+		E65BF3E025BEA0EF001A1860 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E65BF3E125BEA108001A1860 /* MenuWatch.swift */,
+				E6C63A8E25C000A70042628F /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E65BF3E925BEA819001A1860 /* Menu Page */ = {
+			isa = PBXGroup;
+			children = (
+				E645A42425B02789009F5A5F /* MenuController.swift */,
+				E65BF3EA25BEA83C001A1860 /* MenuCell.swift */,
+				E6C63A8225BFD2AE0042628F /* DetailMenuController.swift */,
+			);
+			path = "Menu Page";
+			sourceTree = "<group>";
+		};
+		E680199925BA83D400E3F365 /* Favorite Page */ = {
+			isa = PBXGroup;
+			children = (
+				E680199B25BA83E700E3F365 /* Menu Page */,
+				E680199A25BA83DD00E3F365 /* Article Page */,
+				E65BF3B525BAAE6F001A1860 /* FavoriteCell.swift */,
+			);
+			path = "Favorite Page";
+			sourceTree = "<group>";
+		};
+		E680199A25BA83DD00E3F365 /* Article Page */ = {
+			isa = PBXGroup;
+			children = (
+				E68019A125BA841300E3F365 /* ArticleFavoriteController.swift */,
+				E68019AB25BA844400E3F365 /* ArticleFavorite.storyboard */,
+			);
+			path = "Article Page";
+			sourceTree = "<group>";
+		};
+		E680199B25BA83E700E3F365 /* Menu Page */ = {
+			isa = PBXGroup;
+			children = (
+				E680199C25BA840300E3F365 /* MenuFavoriteController.swift */,
+				E68019A625BA842100E3F365 /* MenuFavorite.storyboard */,
+			);
+			path = "Menu Page";
+			sourceTree = "<group>";
+		};
+		E6B1CF2725B690D100074C5C /* Explore Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6B1CF2825B690F200074C5C /* ExploreController.swift */,
+				E6018B4E25B6CC7000280E09 /* ExploreArticleCell.swift */,
+			);
+			path = "Explore Page";
+			sourceTree = "<group>";
+		};
+		E6C1161425B1821D00F17F97 /* Detail Menu Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6C1162025B1825100F17F97 /* DetailMenu.storyboard */,
+				E6C1161B25B1824300F17F97 /* DetailMenuController.swift */,
+				E63D86B325B5375D00C568EE /* ViewPagerController.swift */,
+				E63D86BD25B5436300C568EE /* SummaryController.swift */,
+				E63D86C825B5616600C568EE /* IngridientsController.swift */,
+				E63D86CD25B5617800C568EE /* StepCookController.swift */,
+				E63D86C325B55FD500C568EE /* AboutCell.swift */,
+				E63D86D525B56F8000C568EE /* StepCell.swift */,
+				E6C63AC125C11E620042628F /* IngridientsCell.swift */,
+			);
+			path = "Detail Menu Page";
+			sourceTree = "<group>";
+		};
+		E6C5130425B039A800A9DA35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5130525B039B600A9DA35 /* Recipes.swift */,
+				E6B1CF2225B6903D00074C5C /* Article.swift */,
+				E6923EAF25B96DFD00C3ED11 /* Person.swift */,
+				E65BF3B025BAACA7001A1860 /* FavoriteList.swift */,
+				E65BF3CE25BE6A57001A1860 /* MenuWatch.swift */,
+				E6C63AB725C10BE30042628F /* TOC.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6C5130A25B04DBA00A9DA35 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E6C5130B25B04DCB00A9DA35 /* LoadImageFromUrl.swift */,
+				E63D86B825B53F3900C568EE /* Color.swift */,
+				E6018B5325B6CFC000280E09 /* SnappingLayout.swift */,
+				E65BF3AB25BAA77B001A1860 /* SnackBarCustom.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E6C63A9325C007300042628F /* Ingridient Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6C63A9825C0076D0042628F /* IngridientController.swift */,
+				E6C63AA225C014380042628F /* IngridientCell.swift */,
+			);
+			path = "Ingridient Page";
+			sourceTree = "<group>";
+		};
+		E6C63A9425C007420042628F /* Step Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6C63A9D25C007880042628F /* StepController.swift */,
+				E6C63AA725C01C330042628F /* StepCell.swift */,
+			);
+			path = "Step Page";
+			sourceTree = "<group>";
+		};
+		E6C63AAC25C104340042628F /* Terms & Condition Page */ = {
+			isa = PBXGroup;
+			children = (
+				E6C63AAD25C104570042628F /* TOCController.swift */,
+				E6C63AB225C104910042628F /* TOC.storyboard */,
+				E6C63ABC25C10F7D0042628F /* TOCCell.swift */,
+			);
+			path = "Terms & Condition Page";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96FB8F2C25C7A0B70035393E /* Mangan WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96FB8F4125C7A0B80035393E /* Build configuration list for PBXNativeTarget "Mangan WidgetExtension" */;
+			buildPhases = (
+				C6E68EBFCCDC9BB934E35229 /* [CP] Check Pods Manifest.lock */,
+				96FB8F2925C7A0B70035393E /* Sources */,
+				96FB8F2A25C7A0B70035393E /* Frameworks */,
+				96FB8F2B25C7A0B70035393E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mangan WidgetExtension";
+			productName = "Mangan WidgetExtension";
+			productReference = 96FB8F2D25C7A0B70035393E /* Mangan WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E645A3FB25B02788009F5A5F /* Mangan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E645A43725B0278A009F5A5F /* Build configuration list for PBXNativeTarget "Mangan" */;
+			buildPhases = (
+				10AE8CBC59A177C7FC14B796 /* [CP] Check Pods Manifest.lock */,
+				E645A3F825B02788009F5A5F /* Sources */,
+				E645A3F925B02788009F5A5F /* Frameworks */,
+				E645A3FA25B02788009F5A5F /* Resources */,
+				E645A43625B0278A009F5A5F /* Embed Watch Content */,
+				96FB8F3E25C7A0B80035393E /* Embed App Extensions */,
+				F7D6A8FD676642CB7EAF46CA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E645A41325B02789009F5A5F /* PBXTargetDependency */,
+				96FB8F3C25C7A0B80035393E /* PBXTargetDependency */,
+			);
+			name = Mangan;
+			productName = Mangan;
+			productReference = E645A3FC25B02788009F5A5F /* Mangan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E645A40F25B02789009F5A5F /* Mangan WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E645A43325B0278A009F5A5F /* Build configuration list for PBXNativeTarget "Mangan WatchKit App" */;
+			buildPhases = (
+				BEE71CDD17105CA130AFCF8D /* [CP] Check Pods Manifest.lock */,
+				E645A40E25B02789009F5A5F /* Resources */,
+				E645A43225B0278A009F5A5F /* Embed App Extensions */,
+				EA55D1B25757BBBD57D9A1CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E645A42225B02789009F5A5F /* PBXTargetDependency */,
+			);
+			name = "Mangan WatchKit App";
+			productName = "Mangan WatchKit App";
+			productReference = E645A41025B02789009F5A5F /* Mangan WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E645A41E25B02789009F5A5F /* Mangan WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E645A42F25B0278A009F5A5F /* Build configuration list for PBXNativeTarget "Mangan WatchKit Extension" */;
+			buildPhases = (
+				92910FB4CA32D435E116AEB5 /* [CP] Check Pods Manifest.lock */,
+				E645A41B25B02789009F5A5F /* Sources */,
+				E645A41C25B02789009F5A5F /* Frameworks */,
+				E645A41D25B02789009F5A5F /* Resources */,
+				820073483C48BC575C8EA09F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mangan WatchKit Extension";
+			productName = "Mangan WatchKit Extension";
+			productReference = E645A41F25B02789009F5A5F /* Mangan WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E645A3F425B02788009F5A5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					96FB8F2C25C7A0B70035393E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					E645A3FB25B02788009F5A5F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					E645A40F25B02789009F5A5F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					E645A41E25B02789009F5A5F = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = E645A3F725B02788009F5A5F /* Build configuration list for PBXProject "Mangan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E645A3F325B02788009F5A5F;
+			productRefGroup = E645A3FD25B02788009F5A5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E645A3FB25B02788009F5A5F /* Mangan */,
+				E645A40F25B02789009F5A5F /* Mangan WatchKit App */,
+				E645A41E25B02789009F5A5F /* Mangan WatchKit Extension */,
+				96FB8F2C25C7A0B70035393E /* Mangan WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96FB8F2B25C7A0B70035393E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FB8F3725C7A0B80035393E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A3FA25B02788009F5A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68019AC25BA844400E3F365 /* ArticleFavorite.storyboard in Resources */,
+				E6018BA625B8150500280E09 /* ListArticle.storyboard in Resources */,
+				E6C1162125B1825100F17F97 /* DetailMenu.storyboard in Resources */,
+				E63CF22C25B922DE009B5473 /* Profile.storyboard in Resources */,
+				E645A40C25B02789009F5A5F /* LaunchScreen.storyboard in Resources */,
+				E6018B7C25B7DB6D00280E09 /* DetailArticle.storyboard in Resources */,
+				E6018B9625B7F23900280E09 /* ListMenu.storyboard in Resources */,
+				E645A40925B02789009F5A5F /* Assets.xcassets in Resources */,
+				E6C63AB325C104910042628F /* TOC.storyboard in Resources */,
+				E645A40725B02788009F5A5F /* Main.storyboard in Resources */,
+				E65BF3CA25BAD795001A1860 /* AppleWatch.storyboard in Resources */,
+				E68019A725BA842100E3F365 /* MenuFavorite.storyboard in Resources */,
+				E63CF23D25B9324B009B5473 /* Authenticate.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A40E25B02789009F5A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E645A41925B02789009F5A5F /* Assets.xcassets in Resources */,
+				E645A41725B02789009F5A5F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A41D25B02789009F5A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E645A42B25B0278A009F5A5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AE8CBC59A177C7FC14B796 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mangan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820073483C48BC575C8EA09F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mangan WatchKit Extension/Pods-Mangan WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mangan WatchKit Extension/Pods-Mangan WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mangan WatchKit Extension/Pods-Mangan WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92910FB4CA32D435E116AEB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mangan WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEE71CDD17105CA130AFCF8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mangan WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E68EBFCCDC9BB934E35229 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mangan WidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7D6A8FD676642CB7EAF46CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mangan/Pods-Mangan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mangan/Pods-Mangan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mangan/Pods-Mangan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96FB8F2925C7A0B70035393E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96FB8F3925C7A0B80035393E /* Mangan_Widget.intentdefinition in Sources */,
+				96FB8F5825C7CEAD0035393E /* Url.swift in Sources */,
+				96FB8F3425C7A0B70035393E /* Mangan_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A3F825B02788009F5A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6C63AC225C11E620042628F /* IngridientsCell.swift in Sources */,
+				E63CF23225B927FA009B5473 /* ProfilePictureCell.swift in Sources */,
+				E6C63ABD25C10F7D0042628F /* TOCCell.swift in Sources */,
+				E63D86BE25B5436300C568EE /* SummaryController.swift in Sources */,
+				E6C5130C25B04DCB00A9DA35 /* LoadImageFromUrl.swift in Sources */,
+				E6C1161C25B1824300F17F97 /* DetailMenuController.swift in Sources */,
+				E6018B9125B7F22F00280E09 /* ListMenuController.swift in Sources */,
+				E63D86B925B53F3900C568EE /* Color.swift in Sources */,
+				96FB8F3A25C7A0B80035393E /* Mangan_Widget.intentdefinition in Sources */,
+				E63D86B425B5375D00C568EE /* ViewPagerController.swift in Sources */,
+				E6018B5425B6CFC000280E09 /* SnappingLayout.swift in Sources */,
+				E63D86D625B56F8000C568EE /* StepCell.swift in Sources */,
+				E65BF3B125BAACA7001A1860 /* FavoriteList.swift in Sources */,
+				E6C512F625B02F1600A9DA35 /* RecipesMenuCell.swift in Sources */,
+				E6C1161025B1539D00F17F97 /* SearchMenuCell.swift in Sources */,
+				E6018B4F25B6CC7000280E09 /* ExploreArticleCell.swift in Sources */,
+				E680199D25BA840300E3F365 /* MenuFavoriteController.swift in Sources */,
+				E65BF3AC25BAA77B001A1860 /* SnackBarCustom.swift in Sources */,
+				E6C5130625B039B600A9DA35 /* Recipes.swift in Sources */,
+				E645A40425B02788009F5A5F /* HomeController.swift in Sources */,
+				E6C63AAE25C104570042628F /* TOCController.swift in Sources */,
+				E6C63AB825C10BE30042628F /* TOC.swift in Sources */,
+				E6018B8625B7E2FD00280E09 /* TitleDetailArticleCell.swift in Sources */,
+				E68019A225BA841300E3F365 /* ArticleFavoriteController.swift in Sources */,
+				E6923EB025B96DFD00C3ED11 /* Person.swift in Sources */,
+				E65BF3BF25BAD785001A1860 /* AppleWatchController.swift in Sources */,
+				E680199525B984BF00E3F365 /* EditProfileCell.swift in Sources */,
+				E63D86CE25B5617800C568EE /* StepCookController.swift in Sources */,
+				E6B1CF2925B690F200074C5C /* ExploreController.swift in Sources */,
+				E65BF3CF25BE6A57001A1860 /* MenuWatch.swift in Sources */,
+				E63D86C425B55FD500C568EE /* AboutCell.swift in Sources */,
+				E63D86C925B5616600C568EE /* IngridientsController.swift in Sources */,
+				E645A40025B02788009F5A5F /* AppDelegate.swift in Sources */,
+				E63CF23725B93201009B5473 /* AuthenticationController.swift in Sources */,
+				E6B1CF2325B6903D00074C5C /* Article.swift in Sources */,
+				E63CF22425B922D4009B5473 /* ProfileController.swift in Sources */,
+				E645A40225B02788009F5A5F /* SceneDelegate.swift in Sources */,
+				E6018B8B25B7E30800280E09 /* DescDetailArticleCell.swift in Sources */,
+				E6018B8125B7E2EC00280E09 /* ImageDetailArticleCell.swift in Sources */,
+				E645A44225B02964009F5A5F /* Url.swift in Sources */,
+				E6018BAB25B8191B00280E09 /* ListArticleCell.swift in Sources */,
+				E6018B7725B7DB6000280E09 /* DetailArticleController.swift in Sources */,
+				E6923EAB25B9661F00C3ED11 /* Mangan.xcdatamodeld in Sources */,
+				E6923EB525B981E200C3ED11 /* EditProfileController.swift in Sources */,
+				E65BF3B625BAAE6F001A1860 /* FavoriteCell.swift in Sources */,
+				E6018BA125B814F600280E09 /* ListArticleController.swift in Sources */,
+				E6018B9B25B80E6400280E09 /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E645A41B25B02789009F5A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E645A42725B02789009F5A5F /* ExtensionDelegate.swift in Sources */,
+				E6C63A8325BFD2AE0042628F /* DetailMenuController.swift in Sources */,
+				E6C63A8F25C000A70042628F /* Recipe.swift in Sources */,
+				E65BF3EB25BEA83C001A1860 /* MenuCell.swift in Sources */,
+				E645A42525B02789009F5A5F /* MenuController.swift in Sources */,
+				E65BF3E225BEA108001A1860 /* MenuWatch.swift in Sources */,
+				E6C63A9925C0076D0042628F /* IngridientController.swift in Sources */,
+				E645A42925B02789009F5A5F /* ComplicationController.swift in Sources */,
+				E6C63AA325C014380042628F /* IngridientCell.swift in Sources */,
+				E6C63AA825C01C330042628F /* StepCell.swift in Sources */,
+				E6C63A9E25C007880042628F /* StepController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96FB8F3C25C7A0B80035393E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96FB8F2C25C7A0B70035393E /* Mangan WidgetExtension */;
+			targetProxy = 96FB8F3B25C7A0B80035393E /* PBXContainerItemProxy */;
+		};
+		E645A41325B02789009F5A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E645A40F25B02789009F5A5F /* Mangan WatchKit App */;
+			targetProxy = E645A41225B02789009F5A5F /* PBXContainerItemProxy */;
+		};
+		E645A42225B02789009F5A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E645A41E25B02789009F5A5F /* Mangan WatchKit Extension */;
+			targetProxy = E645A42125B02789009F5A5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E645A40525B02788009F5A5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E645A40625B02788009F5A5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E645A40A25B02789009F5A5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E645A40B25B02789009F5A5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E645A41525B02789009F5A5F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E645A41625B02789009F5A5F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96FB8F3F25C7A0B80035393E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421E86DA64990F916BB977E6 /* Pods-Mangan WidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				INFOPLIST_FILE = "Mangan Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BOSSPAT.Mangan.Mangan-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96FB8F4025C7A0B80035393E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF269AA06AE6312C05D7FF2 /* Pods-Mangan WidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				INFOPLIST_FILE = "Mangan Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BOSSPAT.Mangan.Mangan-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E645A42D25B0278A009F5A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E645A42E25B0278A009F5A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E645A43025B0278A009F5A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E134D356AEAA9582636470E7 /* Pods-Mangan WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				INFOPLIST_FILE = "Mangan WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BOSSPAT.Mangan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E645A43125B0278A009F5A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EE9E57BEB2ADD2E97801454 /* Pods-Mangan WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				INFOPLIST_FILE = "Mangan WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BOSSPAT.Mangan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		E645A43425B0278A009F5A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F3951A39B9A6158323FC73 /* Pods-Mangan WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				IBSC_MODULE = Mangan_WatchKit_Extension;
+				INFOPLIST_FILE = "Mangan WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = BOSSPAT.Mangan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		E645A43525B0278A009F5A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A85C34DE4C654E67B507B3 /* Pods-Mangan WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				IBSC_MODULE = Mangan_WatchKit_Extension;
+				INFOPLIST_FILE = "Mangan WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = BOSSPAT.Mangan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		E645A43825B0278A009F5A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD8A4563994C74C02E55A07 /* Pods-Mangan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				INFOPLIST_FILE = Mangan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = BOSSPAT.Mangan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E645A43925B0278A009F5A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69B5295D3090D4A1C76D27C /* Pods-Mangan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2NJYBE4CVL;
+				INFOPLIST_FILE = Mangan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = BOSSPAT.Mangan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96FB8F4125C7A0B80035393E /* Build configuration list for PBXNativeTarget "Mangan WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96FB8F3F25C7A0B80035393E /* Debug */,
+				96FB8F4025C7A0B80035393E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E645A3F725B02788009F5A5F /* Build configuration list for PBXProject "Mangan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E645A42D25B0278A009F5A5F /* Debug */,
+				E645A42E25B0278A009F5A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E645A42F25B0278A009F5A5F /* Build configuration list for PBXNativeTarget "Mangan WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E645A43025B0278A009F5A5F /* Debug */,
+				E645A43125B0278A009F5A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E645A43325B0278A009F5A5F /* Build configuration list for PBXNativeTarget "Mangan WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E645A43425B0278A009F5A5F /* Debug */,
+				E645A43525B0278A009F5A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E645A43725B0278A009F5A5F /* Build configuration list for PBXNativeTarget "Mangan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E645A43825B0278A009F5A5F /* Debug */,
+				E645A43925B0278A009F5A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E6923EA925B9661F00C3ED11 /* Mangan.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E6923EAA25B9661F00C3ED11 /* Mangan.xcdatamodel */,
+			);
+			currentVersion = E6923EAA25B9661F00C3ED11 /* Mangan.xcdatamodel */;
+			path = Mangan.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E645A3F425B02788009F5A5F /* Project object */;
+}
